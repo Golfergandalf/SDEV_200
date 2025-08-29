@@ -20,7 +20,20 @@ Write a test program that invokes these methods to display the following tables.
 */
 
 public class M01_Assignment_1 {
+    // Convert from feet to meters
+    public static double footToMeter (double foot) {
+        return 0.305 * foot;
+    }
+    // Convert from meters to feet
+    public static double meterToFoot (double meter) {
+        return 3.279 * meter;
+    }
+
+    // Display the table
     public static void main(String args[]) {
-        System.out.println("Hello World!");
+        // Table Header
+        System.out.printf("%-10s%-10s %-10s%-10s\n", "Feet", "Meters", "Meters", "Feet");
+        System.out.println("---------------------");
+        // Print Rows
     }
 }
