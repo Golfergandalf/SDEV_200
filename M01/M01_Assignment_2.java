@@ -36,3 +36,6 @@ Write a program that prompts the user to enter a credit card number as a long in
   • Return the first k number of digits from number. If the number of digits in number is less than k, return number.
   public static long getPrefix (long number, int k)
 */
+
+public class M01_Assignment_2 {
+}
