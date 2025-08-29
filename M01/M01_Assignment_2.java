@@ -19,7 +19,9 @@ In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbe
   4. Sum the results from Step 2 and Step 3.
   5. If the result from Step 4 is divisible by 10, the card number is valid; otherwise, it is invalid.
 
-Write a program that prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid. Design your program to use the following methods:
+Write a program that prompts the user to enter a credit card number as a long integer. Display whether the number is valid or invalid.
+
+Design your program to use the following methods:
   • Return true if the card number is valid
   public static boolean isValid (long number)
   • Get the result from Step 2
@@ -38,4 +40,9 @@ Write a program that prompts the user to enter a credit card number as a long in
 */
 
 public class M01_Assignment_2 {
+  // Return true if the card number is valid
+  public static boolean isValid (long number) {
+  }
+  public static int sumOfDoubleEvenPlace (long number) {
+  }
 }
