@@ -70,6 +70,10 @@ public class M01_Assignment_2 {
     }
 
     public static void main (String args[]) {
-        // Display the results
+        Scanner input = new Scanner(System.in);
+        
+        // Ask for card number (13-16 #s)
+        System.out.println("Enter a credit card number that is 13-16 numbers: ");
+
     }
 }
