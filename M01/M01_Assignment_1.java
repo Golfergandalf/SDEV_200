@@ -32,8 +32,19 @@ public class M01_Assignment_1 {
     // Display the table
     public static void main(String args[]) {
         // Table Header
-        System.out.printf("%-10s%-10s %-10s%-10s\n", "Feet", "Meters", "Meters", "Feet");
-        System.out.println("---------------------");
-        // Print Rows
+        System.out.printf("%-10s%-10s    %-10s%-10s\n", 
+                          "Feet", "Meters", "Meters", "Feet");
+        System.out.println("--------------------------------------------------");
+
+        // Print rows
+        for (int i = 1, j = 20; i <= 10 && j <= 65; i++, j += 5) {
+            double feet = i;
+            double metersFromFeet = footToMeter(feet);
+            double meters = j;
+            double feetFromMeters = meterToFoot(meters);
+
+            System.out.printf("%-10.1f%-10.3f    %-10.1f%-10.3f\n",
+                              feet, metersFromFeet, meters, feetFromMeters);
+        }
     }
 }
