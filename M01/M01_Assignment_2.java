@@ -38,7 +38,8 @@ Display whether the number is valid or invalid. Design your program to use the f
 */
 
 public class M01_Assignment_2 {
-
+    import java.util.Scanner;
+    
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
         return false;
