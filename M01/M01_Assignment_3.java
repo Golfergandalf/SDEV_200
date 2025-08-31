@@ -7,3 +7,8 @@ File:   M01_Assignment_3.java
 
 /* 8.29 ()
 */
+public class M01_Assignment_3 {
+    public static void main(String args[]) {
+        // Stuff goes here
+    }
+}
