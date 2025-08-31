@@ -37,9 +37,26 @@ Display whether the number is valid or invalid. Design your program to use the f
         public static long getPrefix(long number, int k)
 */
 
+import java.util.Scanner;
 public class M01_Assignment_2 {
-    import java.util.Scanner;
     
+    // 📌 Main Method
+    public static void main (String args[]) {
+        Scanner input = new Scanner(System.in);
+        
+        // Ask for card number (13-16 #s)
+        System.out.println("Enter a credit card number that is 13-16 numbers: ");
+        long number = input.nextLong();
+        
+        // Check if the input is valid
+        if (isValid(number)) {
+            System.out.println("That number is valid.");
+        } else {
+            System.out.println("That number is not valid.");
+        }
+    }
+    
+    // 📌 Methods
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
         return false;
@@ -67,13 +84,5 @@ public class M01_Assignment_2 {
     /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
     public static long getPrefix (long number, int k) {
         return 0;
-    }
-
-    public static void main (String args[]) {
-        Scanner input = new Scanner(System.in);
-        
-        // Ask for card number (13-16 #s)
-        System.out.println("Enter a credit card number that is 13-16 numbers: ");
-
     }
 }
