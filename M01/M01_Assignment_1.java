@@ -30,7 +30,7 @@ public class M01_Assignment_1 {
     }
 
     // Display the table
-    public static void main(String args[]) {
+    public static void main (String args[]) {
         // Table Header
         System.out.printf("%-10s%-10s    %-10s%-10s\n", 
                           "Feet", "Meters", "Meters", "Feet");

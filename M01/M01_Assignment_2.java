@@ -22,23 +22,53 @@ In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbe
 Write a program that prompts the user to enter a credit card number as a long integer.
 Display whether the number is valid or invalid. Design your program to use the following methods:
     • Return true if the card number is valid
-    public static boolean isValid(long number)
+        public static boolean isValid(long number)
     • Get the result from Step 2
-    public static int sumOfDoubleEvenPlace(long number)
+        public static int sumOfDoubleEvenPlace(long number)
     • Return this number if it is a single digit, otherwise, return the sum of the two digits
-    public static int getDigit(int number)
+        public static int getDigit(int number)
     • Return sum of odd-place digits in number
-    public static int sumOfOddPlace(long number)
+        public static int sumOfOddPlace(long number)
     • Return true if the number d is a prefix for number
-    public static boolean prefixMatched(long number, int d)
+        public static boolean prefixMatched(long number, int d)
     • Return the number of digits in d
-    public static int getSize(long d)
+        public static int getSize(long d)
     • Return the first k number of digits from number. If the number of digits in number is less than k, return number.
-    public static long getPrefix(long number, int k)
+        public static long getPrefix(long number, int k)
 */
 
 public class M01_Assignment_2 {
-    public static void main(String args[]) {
-        // Stuff goes here
+
+    /* Return true if the card number is valid */
+    public static boolean isValid (long number) {
+        return false;
+    }
+    /* Get the result from Step 2 */
+    public static int sumOfDoubleEvenPlace (long number) {
+        return 0;
+    }
+    /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
+    public static int getDigit (int number) {
+        return 0;
+    }
+    /* Return sum of odd-place digits in number */
+    public static int sumOfOddPlace (long number) {
+        return 0;
+    }
+    /* Return true if the number d is a prefix for number */
+    public static boolean prefixMatched (long number, int d) {
+        return false;
+    }
+    /* Return the number of digits in d */
+    public static int getSize (long d) {
+        return 0;
+    }
+    /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
+    public static long getPrefix (long number, int k) {
+        return 0;
+    }
+
+    public static void main (String args[]) {
+        // Display the results
     }
 }
