@@ -5,40 +5,7 @@ Date:   8/25/25
 File:   M01_Assignment_2.java
 */
 
-/* 6.31 (Financial: credit card and number validation)
-Credit card numbers follow certain patterns. A credit card number must have between 13 and 16 digits. It must start with
-    * 4 for Visa cards
-    * 5 for Master cards
-    * 37 for American Express cards
-    * 6 for Discover cards
-
-In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbers. The algorithm is useful to determine whether a card number is entered correctly, or whether a credit card is scanned correctly by a scanner. Credit card numbers are generated following this validity check, commonly known as the Luhn check or the Mod 10 check, which can be described as follows (for illustration, consider the card number 4388576018402626):
-    1. Double every second digit from right to left. If doubling of a digit results in a two-digit number, add up the two digits to get a single-digit number.
-    2. Now add all single-digit numbers from Step 1.
-    3. Add all digits in the odd places from right to left in the card number.
-    4. Sum the results from Step 2 and Step 3.
-    5. If the result from Step 4 is divisible by 10, the card number is valid; otherwise, it is invalid. For example, the number 4388576018402626 is invalid, but the number 4388576018410707 is valid.
-
-Write a program that prompts the user to enter a credit card number as a long integer.
-Display whether the number is valid or invalid. Design your program to use the following methods:
-    * Return true if the card number is valid
-        public static boolean isValid(long number)
-    * Get the result from Step 2
-        public static int sumOfDoubleEvenPlace(long number)
-    * Return this number if it is a single digit, otherwise, return the sum of the two digits
-        public static int getDigit(int number)
-    * Return sum of odd-place digits in number
-        public static int sumOfOddPlace(long number)
-    * Return true if the number d is a prefix for number
-        public static boolean prefixMatched(long number, int d)
-    * Return the number of digits in d
-        public static int getSize(long d)
-    * Return the first k number of digits from number. If the number of digits in number is less than k, return number.
-        public static long getPrefix(long number, int k)
-*/
-
 import java.util.Scanner;
-@SuppressWarnings("resource")
 public class M01_Assignment_2 {
     
     // Main Method
@@ -51,9 +18,9 @@ public class M01_Assignment_2 {
         
         // Check the credit card number
         if (isValid(number)) {
-            System.out.println(number + " is valid!");
+            System.out.println("The input: " + number + " is a valid credit card number!");
         } else {
-            System.out.println(number + " is not valid!");
+            System.out.println("The input: " + number + " is not a valid credit card number!");
         }
     }
     
@@ -62,27 +29,29 @@ public class M01_Assignment_2 {
     /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
     public static int getDigit (int number) {
         if (number < 10) {
-            // if number is under 10, return number
+            // If number is under 10, return number as is
             return number;
         } else {
-            // if number is greater than 10, return the sum of the two digits
+            // Else number is over 10, return the sum of the two digits
             return (number / 10) + (number % 10);
         }
     }
 
     /* Return the number of digits in d */
     public static int getSize (long d) {
+        // Converts the number to a string & returns its length
         return String.valueOf(d).length();
     }
 
     /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
     public static long getPrefix (long number, int k) {
         String numberString = String.valueOf(number);
+
         if (numberString.length() <= k) {
-            // When less than k, return number
+            // If number is shorter than k digits, return the number as is
             return number;
         } else {
-            // When greater than k
+            // Else number is greater than k digits, take only first k digits
             return Long.parseLong(numberString.substring(0, k));
         }
     }
@@ -100,11 +69,16 @@ public class M01_Assignment_2 {
 
     /* Get the result from Step 2 */
     public static int sumOfDoubleEvenPlace (long number) {
+        
+        // Reverse the number string to make it easier to access the even places
         String numberString = new StringBuilder(String.valueOf(number)).reverse().toString();
         int sum = 0;
 
+        // Start at the 2nd digit from the right and advance places by 2
         for (int i = 1; i < numberString.length(); i += 2) {
             int digit = Character.getNumericValue(numberString.charAt(i));
+            
+            // Double it & adjust if it becomes 2 digits
             sum += getDigit(digit * 2);
         }
         return sum;
@@ -112,11 +86,16 @@ public class M01_Assignment_2 {
 
     /* Return sum of odd-place digits in number */
     public static int sumOfOddPlace (long number) {
+
+        // Reverse the number string to make it easier to access the odd places
         String numberString = new StringBuilder(String.valueOf(number)).reverse().toString();
         int sum = 0;
 
+        // Start at the first digit from the right
         for (int i = 0; i < numberString.length(); i += 2) {
             int digit = Character.getNumericValue(numberString.charAt(i));
+            
+            // Add every digit in the odd places
             sum += digit;
         }
         return sum;
