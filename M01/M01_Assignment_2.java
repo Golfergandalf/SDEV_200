@@ -58,15 +58,6 @@ public class M01_Assignment_2 {
     }
     
     // Methods
-/* Return true if the card number is valid */
-    public static boolean isValid (long number) {
-        return false;
-    }
-
-/* Get the result from Step 2 */
-    public static int sumOfDoubleEvenPlace (long number) {
-        return 0;
-    }
 
     /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
     public static int getDigit (int number) {
@@ -79,16 +70,6 @@ public class M01_Assignment_2 {
         }
     }
 
-/* Return sum of odd-place digits in number */
-    public static int sumOfOddPlace (long number) {
-        return 0;
-    }
-
-    /* Return true if the number d is a prefix for number */
-    public static boolean prefixMatched (long number, int d) {
-        return getPrefix(number, getSize(d)) == d;
-    }
-
     /* Return the number of digits in d */
     public static int getSize (long d) {
         return String.valueOf(d).length();
@@ -96,13 +77,44 @@ public class M01_Assignment_2 {
 
     /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
     public static long getPrefix (long number, int k) {
-        String numString = String.valueOf(number);
-        if (numString.length() <= k) {
+        String numberString = String.valueOf(number);
+        if (numberString.length() <= k) {
             // When less than k, return number
             return number;
         } else {
             // When greater than k
-            return Long.parseLong(numString.substring(0, k));
+            return Long.parseLong(numberString.substring(0, k));
         }
+    }
+
+    /* Return true if the number d is a prefix for number */
+    public static boolean prefixMatched (long number, int d) {
+        if (getPrefix(number, getSize(d)) == d) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /* Get the result from Step 2 */
+    public static int sumOfDoubleEvenPlace (long number) {
+        String numberString = new StringBuilder(String.valueOf(number)).reverse().toString();
+        int sum = 0;
+
+        for (int i = 1; i < numberString.length(); i += 2) {
+            int digit = Character.getNumericValue(numberString.charAt(i));
+            sum += getDigit(digit * 2);
+        }
+        return sum;
+    }
+
+    /* Return sum of odd-place digits in number */
+    public static int sumOfOddPlace (long number) {
+        return 0;
+    }
+    
+    /* Return true if the card number is valid */
+    public static boolean isValid (long number) {
+        return false;
     }
 }
