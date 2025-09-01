@@ -10,7 +10,9 @@ public class M01_Assignment_4 {
     
     // Create Account object
     Account account = new Account(1122, 20000);
-    Account.setAnnualInterestRate(4.5); // set annual interest rate
+    
+    // set annual interest rate
+    Account.setAnnualInterestRate(4.5);
 
     // Withdraw and deposit
     account.withdraw(2500);
