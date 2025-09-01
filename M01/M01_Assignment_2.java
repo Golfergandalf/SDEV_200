@@ -24,7 +24,7 @@ public class M01_Assignment_2 {
         }
     }
     
-    // Methods
+    // More Methods
 
     /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
     public static int getDigit (int number) {
