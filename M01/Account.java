@@ -6,17 +6,20 @@ File:   Account.class
 */
 
 import java.util.Date;
-
 public class Account {
-    // Private data fields
+
+    // Private Variables
     private int id = 0;
     private double balance = 0;
-    private static double annualInterestRate = 0; // shared by all accounts
+    // shared by all accounts
+    private static double annualInterestRate = 0;
     private Date dateCreated;
+
 
     // No-arg constructor
     public Account() {
-        dateCreated = new Date(); // set creation date to now
+        // set creation date to now
+        dateCreated = new Date();
     }
 
     // Constructor with id and balance
@@ -54,7 +57,8 @@ public class Account {
 
     // Get monthly interest rate
     public double getMonthlyInterestRate() {
-        return annualInterestRate / 12 / 100; // convert percentage to decimal
+        // convert percentage to decimal
+        return annualInterestRate / 12 / 100;
     }
 
     // Get monthly interest
