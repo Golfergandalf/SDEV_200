@@ -45,19 +45,39 @@ public class M01_Assignment_2 {
     public static void main (String args[]) {
         Scanner input = new Scanner(System.in);
         
-        // Ask for card number (13-16 numbers)
+        // Ask for the credit card number (13-16 numbers)
         System.out.println("Enter a credit card number that is 13-16 numbers long: ");
         long number = input.nextLong();
         
         // Check if the input is valid
         if (isValid(number)) {
-            System.out.println("That number is valid.");
+            System.out.println(number + " is valid!");
         } else {
-            System.out.println("That number is not valid.");
+            System.out.println(number + " is not valid!");
         }
     }
     
     // Methods
+    
+    /* Return the number of digits in d */
+    public static int getSize (long d) {
+        return String.valueOf(d).length();
+    }
+    /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
+    public static int getDigit (int number) {
+        return 0;
+    }
+    
+    /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
+    public static long getPrefix (long number, int k) {
+        return 0;
+    }
+    /* Return true if the number d is a prefix for number */
+    public static boolean prefixMatched (long number, int d) {
+        return false;
+    }
+
+
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
         return false;
@@ -66,24 +86,8 @@ public class M01_Assignment_2 {
     public static int sumOfDoubleEvenPlace (long number) {
         return 0;
     }
-    /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
-    public static int getDigit (int number) {
-        return 0;
-    }
     /* Return sum of odd-place digits in number */
     public static int sumOfOddPlace (long number) {
-        return 0;
-    }
-    /* Return true if the number d is a prefix for number */
-    public static boolean prefixMatched (long number, int d) {
-        return false;
-    }
-    /* Return the number of digits in d */
-    public static int getSize (long d) {
-        return 0;
-    }
-    /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
-    public static long getPrefix (long number, int k) {
         return 0;
     }
 }
