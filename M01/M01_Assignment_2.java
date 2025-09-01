@@ -49,7 +49,7 @@ public class M01_Assignment_2 {
         System.out.println("Enter a credit card number that is 13-16 numbers long: ");
         long number = input.nextLong();
         
-        // Check if the input is valid
+        // Check the credit card number
         if (isValid(number)) {
             System.out.println(number + " is valid!");
         } else {
@@ -90,8 +90,10 @@ public class M01_Assignment_2 {
     /* Return true if the number d is a prefix for number */
     public static boolean prefixMatched (long number, int d) {
         if (getPrefix(number, getSize(d)) == d) {
+            // the prefix does match
             return true;
         } else {
+            // the prefix does not match
             return false;
         }
     }
@@ -110,11 +112,36 @@ public class M01_Assignment_2 {
 
     /* Return sum of odd-place digits in number */
     public static int sumOfOddPlace (long number) {
-        return 0;
+        String numberString = new StringBuilder(String.valueOf(number)).reverse().toString();
+        int sum = 0;
+
+        for (int i = 0; i < numberString.length(); i += 2) {
+            int digit = Character.getNumericValue(numberString.charAt(i));
+            sum += digit;
+        }
+        return sum;
     }
-    
+
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
-        return false;
+        
+        // Is the number length not between 13 and 16 digits?
+        int sizeOfNumber = getSize(number);
+        if (sizeOfNumber < 13 || sizeOfNumber > 16) {
+            return false;
+        }
+
+        // Is the prefix not 4, 5, 37, or 6?
+        if (!(prefixMatched(number, 4) || prefixMatched(number, 5) || prefixMatched(number, 37) || prefixMatched(number, 6))) {
+            return false;
+        }
+
+        // Does it pass the Luhn check?
+        int sum = sumOfDoubleEvenPlace(number) + sumOfOddPlace(number);
+        if (sum % 10 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
