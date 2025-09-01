@@ -45,8 +45,8 @@ public class M01_Assignment_2 {
     public static void main (String args[]) {
         Scanner input = new Scanner(System.in);
         
-        // Ask for card number (13-16 #s)
-        System.out.println("Enter a credit card number that is 13-16 numbers: ");
+        // Ask for card number (13-16 numbers)
+        System.out.println("Enter a credit card number that is 13-16 numbers long: ");
         long number = input.nextLong();
         
         // Check if the input is valid
