@@ -65,7 +65,13 @@ public class M01_Assignment_2 {
     }
     /* Return this number if it is a single digit, otherwise, return the sum of the two digits */
     public static int getDigit (int number) {
-        return 0;
+        if (number < 10) {
+            // if number is under 10, then return number
+            return number;
+        } else {
+            // if number is greater than 10, then return the sum of the two digits
+            return (number / 10) + (number % 10);
+        }
     }
     
     /* Return the first k number of digits from number. If the number of digits in number is less than k, return number. */
@@ -76,7 +82,6 @@ public class M01_Assignment_2 {
     public static boolean prefixMatched (long number, int d) {
         return false;
     }
-
 
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
