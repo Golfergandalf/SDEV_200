@@ -22,6 +22,7 @@ public class M01_Assignment_2 {
         } else {
             System.out.println("The input: " + number + " is not a valid credit card number!");
         }
+        input.close();
     }
     
     // More Methods
