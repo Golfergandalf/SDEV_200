@@ -26,7 +26,18 @@ Write a test program that creates an Account object with an account ID of 1122, 
 */
 
 public class M01_Assignment_4 {
-    public static void main(String args[]) {
-        // Stuff goes here
+    public static void main(String[] args) {
+        // Create Account object
+        Account account = new Account(1122, 20000);
+        Account.setAnnualInterestRate(4.5); // set annual interest rate
+
+        // Withdraw and deposit
+        account.withdraw(2500);
+        account.deposit(3000);
+
+        // Display balance, monthly interest, and creation date
+        System.out.println("Balance: $" + account.getBalance());
+        System.out.println("Monthly Interest: $" + account.getMonthlyInterest());
+        System.out.println("Date Created: " + account.getDateCreated());
     }
 }
