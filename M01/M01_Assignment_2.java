@@ -7,10 +7,10 @@ File:   M01_Assignment_2.java
 
 /* 6.31 (Financial: credit card and number validation)
 Credit card numbers follow certain patterns. A credit card number must have between 13 and 16 digits. It must start with
-    • 4 for Visa cards
-    • 5 for Master cards
-    • 37 for American Express cards
-    • 6 for Discover cards
+    * 4 for Visa cards
+    * 5 for Master cards
+    * 37 for American Express cards
+    * 6 for Discover cards
 
 In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbers. The algorithm is useful to determine whether a card number is entered correctly, or whether a credit card is scanned correctly by a scanner. Credit card numbers are generated following this validity check, commonly known as the Luhn check or the Mod 10 check, which can be described as follows (for illustration, consider the card number 4388576018402626):
     1. Double every second digit from right to left. If doubling of a digit results in a two-digit number, add up the two digits to get a single-digit number.
@@ -21,26 +21,27 @@ In 1954, Hans Luhn of IBM proposed an algorithm for validating credit card numbe
 
 Write a program that prompts the user to enter a credit card number as a long integer.
 Display whether the number is valid or invalid. Design your program to use the following methods:
-    • Return true if the card number is valid
+    * Return true if the card number is valid
         public static boolean isValid(long number)
-    • Get the result from Step 2
+    * Get the result from Step 2
         public static int sumOfDoubleEvenPlace(long number)
-    • Return this number if it is a single digit, otherwise, return the sum of the two digits
+    * Return this number if it is a single digit, otherwise, return the sum of the two digits
         public static int getDigit(int number)
-    • Return sum of odd-place digits in number
+    * Return sum of odd-place digits in number
         public static int sumOfOddPlace(long number)
-    • Return true if the number d is a prefix for number
+    * Return true if the number d is a prefix for number
         public static boolean prefixMatched(long number, int d)
-    • Return the number of digits in d
+    * Return the number of digits in d
         public static int getSize(long d)
-    • Return the first k number of digits from number. If the number of digits in number is less than k, return number.
+    * Return the first k number of digits from number. If the number of digits in number is less than k, return number.
         public static long getPrefix(long number, int k)
 */
 
 import java.util.Scanner;
+@SuppressWarnings("resource")
 public class M01_Assignment_2 {
     
-    // 📌 Main Method
+    // Main Method
     public static void main (String args[]) {
         Scanner input = new Scanner(System.in);
         
@@ -56,7 +57,7 @@ public class M01_Assignment_2 {
         }
     }
     
-    // 📌 Methods
+    // Methods
     /* Return true if the card number is valid */
     public static boolean isValid (long number) {
         return false;
