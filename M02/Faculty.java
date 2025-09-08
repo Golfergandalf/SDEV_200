@@ -4,7 +4,6 @@ Class:  SDEV 200
 Date:   9/3/25
 File:   Faculty.java
 */
-//@SuppressWarnings("unused") // hide compile warnings
 
 public class Faculty extends Employee {
 
