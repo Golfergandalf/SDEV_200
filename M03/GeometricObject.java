@@ -5,6 +5,12 @@ Date:   9/8/25
 File:   GeometricObject.java
 */
 
+/* 13.9 (Enable Circle comparable)
+Rewrite the Circle class in LiveExample 13.2 to extend GeometricObject and implement the Comparable interface.
+Override the equals method in the Object class. Two Circle objects are equal if their radii are the same.
+Draw the UML diagram that involves Circle, GeometricObject, and Comparable.
+*/
+
 public FILL_CODE_OR_CLICK_ANSWER class GeometricObject {
 	private String color = "white";
 	private boolean filled;
@@ -55,7 +61,7 @@ public FILL_CODE_OR_CLICK_ANSWER class GeometricObject {
 	
 	/** Abstract method getArea */
 	public FILL_CODE_OR_CLICK_ANSWER double getArea();
-    
+
 	/** Abstract method getPerimeter */
 	public FILL_CODE_OR_CLICK_ANSWER double getPerimeter();
 }
