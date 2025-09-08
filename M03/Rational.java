@@ -34,6 +34,7 @@ public class Rational extends Number implements Comparable<Rational> {
 	private BigInteger numerator = BigInteger.ZERO;
 	private BigInteger denominator = BigInteger.ONE;
 	
+
     // Constructors
 	/** Construct a rational with default properties */
 	public Rational() {
@@ -63,6 +64,7 @@ public class Rational extends Number implements Comparable<Rational> {
 		return denominator;
 	}
 	
+
     // Calculation Methods
 	/** Add a rational number to this rational */
 	public Rational add (Rational secondRational) {
@@ -92,6 +94,7 @@ public class Rational extends Number implements Comparable<Rational> {
 		return new Rational(n, d);
 	}
 	
+    
     // Overrides
 	@Override // Override toString()
 	public String toString() {
