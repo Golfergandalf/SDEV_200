@@ -15,14 +15,8 @@ Write a program to check whether a Java source-code file has correct pairs of gr
 Pass the source-code file name as a command-line argument.
 
 Sample Run for Exercise20_11.java
----
-Enter command arguements (Sample arguments provided below. You may modify it)
----
-c:\book\Welcome.java
----
 Execution Result:
 ---
-JDK8>java Exercise20_11 c:\book\Welcome.java
 public class Welcome {
 	public static void main(String[] args) {
 		// Display message Welcome to Java! on the console
