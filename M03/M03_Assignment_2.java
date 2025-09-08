@@ -53,6 +53,7 @@ public class M03_Assignment_2 {
         System.out.println(r1 + " / " + r2 + " = " + r1.divide(r2));
         System.out.println(r2 + " is " + r2.doubleValue());
 
+        // Make the input error go away
         input.close();
     }
 }
