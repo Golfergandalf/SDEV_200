@@ -131,13 +131,9 @@ public class Rational extends Number implements Comparable<Rational> {
 	}
 	
 	@Override // Implement the compareTo method in Comparable
-	FILL_CODE_OR_CLICK_ANSWER {
-		if (this.subtract(o).getNumerator() > 0) {
-			return 1;
-		} else if (this.subtract(o).getNumerator() < 0) {
-			return -1;
-		} else {
-			return 0;
-		}
+	public int compareTo (Rational o) {
+        BigInteger left = numerator.multiply(o.getDenominator());
+        BigInteger right = denominator.multiply(o.getNumerator());
+        return left.compareTo(right);
 	}
 }
