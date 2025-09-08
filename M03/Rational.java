@@ -25,91 +25,89 @@ Enter rational r2 with numerator and denominator separated by a space: 4912 9347
 4912/9347 is 0.5255162084091152
 */
 
-public class Rational extends Number implements FILL_CODE_OR_CLICK_ANSWER {
+import java.math.BigInteger;
+
+public class Rational extends Number implements Comparable<Rational> {
+
+    // Variables
 	// Data fields for numerator and denominator
-	private long numerator = 0;
-	private long denominator = 1;
+	private BigInteger numerator = BigInteger.ZERO;
+	private BigInteger denominator = BigInteger.ONE;
 	
+    // Constructors
 	/** Construct a rational with default properties */
 	public Rational() {
-		FILL_CODE_OR_CLICK_ANSWER;
+		this(BigInteger.ZERO, BigInteger.ONE);
 	}
-	
 	/** Construct a rational with specified numerator and denominator */
-	public Rational (long numerator, long denominator) {
-		long gcd = gcd(numerator, denominator);
-		this.numerator = FILL_CODE_OR_CLICK_ANSWER
-		this.denominator = Math.abs(denominator) / gcd;
+	public Rational (BigInteger numerator, BigInteger denominator) {
+        if (denominator.equals(BigInteger.ZERO)) {
+            throw new ArithmeticException("Denominator cannot be zero.");
+        }
+        BigInteger gcd = numerator.gcd(denominator);
+        // Ensure denominator is positive
+        if (denominator.compareTo(BigInteger.ZERO) < 0) {
+            gcd = gcd.negate();
+        }
+		this.numerator = numerator.divide(gcd);
+		this.denominator = denominator.divide(gcd);
 	}
 	
-	/** Find GCD of two numbers */
-	private static long gcd (long n, long d) {
-		long n1 = Math.abs(n);
-		long n2 = Math.abs(d);
-		int gcd = 1;
-		
-		for (int k = 1; k <= n1 && k <= n2; k++) {
-			if (n1 % k == 0 && n2 % k == 0) {
-				gcd = k;
-			}
-		}
-		return gcd;
-	}
-	
+    // Get Methods
 	/** Return numerator */
-	public long getNumerator() {
+	public BigInteger getNumerator() {
 		return numerator;
 	}
-	
 	/** Return denominator */
-	public long getDenominator() {
+	public BigInteger getDenominator() {
 		return denominator;
 	}
 	
+    // Calculation Methods
 	/** Add a rational number to this rational */
 	public Rational add (Rational secondRational) {
-		long n = numerator * secondRational.getDenominator() + denominator * secondRational.getNumerator();
-		long d = denominator * secondRational.getDenominator();
-		return FILL_CODE_OR_CLICK_ANSWER;
+        BigInteger n = numerator.multiply(secondRational.getDenominator()).add(denominator.multiply(secondRational.getNumerator()));
+        BigInteger d = denominator.multiply(secondRational.getNumerator());
+        return new Rational(n, d);
 	}
-	
 	/** Subtract a rational number from this rational */
 	public Rational subtract (Rational secondRational) {
-		long n = numerator * secondRational.getDenominator() - denominator * secondRational.getNumerator();
-		long d = denominator * secondRational.getDenominator();
+		BigInteger n = numerator.multiply(secondRational.getDenominator()).subtract(denominator.multiply(secondRational.getNumerator()));
+        BigInteger d = denominator.multiply(secondRational.getNumerator());
 		return new Rational(n, d);
 	}
-	
 	/** Multiply a rational number from this rational */
 	public Rational multiply (Rational secondRational) {
-		long n = FILL_CODE_OR_CLICK_ANSWER;
-		long d = denominator * secondRational.getDenominator();
+		BigInteger n = numerator.multiply(secondRational.getNumerator());
+        BigInteger d = denominator.multiply(secondRational.getDenominator());
 		return new Rational(n, d);
 	}
-	
 	/** Divide a rational number from this rational */
 	public Rational divide (Rational secondRational) {
-		long n = numerator * secondRational.getDenominator();
-		long d = denominator * secondRational.numerator();
+		if (secondRational.getNumerator().equals(BigInteger.ZERO)) {
+            throw new ArithmeticException("Division by zero");
+        }
+        BigInteger n = numerator.multiply(secondRational.getDenominator());
+        BigInteger d = denominator.multiply(secondRational.getNumerator());
 		return new Rational(n, d);
 	}
 	
+    // Overrides
 	@Override // Override toString()
-	FILL_CODE_OR_CLICK_ANSWER {
-		if (denominator == 1) {
-			return numerator + "";
+	public String toString() {
+		if (denominator.equals(BigInteger.ONE)) {
+			return numerator.toString();
 		} else {
 			return numerator + "/" + denominator;
 		}
 	}
 	
 	@Override // Override the equals method in the Object class
-	FILL_CODE_OR_CLICK_ANSWER {
-		if ((this.subtract((Rational)(other))).getNumerator() == 0) {
-			return true;
-		} else {
-			return false;
-		}
+	public boolean equals (Object other) {
+		if (other instanceof Rational) {
+            Rational o = (Rational) other;
+            return numerator.equals(o.getNumerator()) && denominator.equals(o.getDenominator());
+        }
 	}
 	
 	@Override // Implement the abstract intValue method in Number
