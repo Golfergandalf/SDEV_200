@@ -10,7 +10,7 @@ Revise the program in LiveExample 21.7.
 If a keyword is in a comment or in a string, don’t count it. Pass the Java file name from the command line.
 Assume the Java source code is correct and line comments and paragraph comments do not overlap.
 
-Sample Run for Exercise21_03.java
+Sample Run for M04_Assignment_2.java
 Execution Result:
 ---
 The program is
@@ -21,7 +21,20 @@ public class Welcome {
 	}
 }
 The number of keywords in the program is 5
+------------------------------------------------------------------------------
+Sample Run for CountKeywords.java
+Execution Result:
+---
+JDK8>javac CountKeywords.java
+Compiled successful
 
+JDK8>java CountKeywords
+Enter a Java source file: c:\book\Welcome.java
+The number of keywords in c:\book\Welcome.java is 5
+------------------------------------------------------------------------------
+The program prompts the user to enter a Java source filename (line 7) and reads the filename (line 8). If the file exists, the countKeywords method is invoked to count the keywords in the file (line 13).
+The countKeywords method creates an array of strings for the keywords (lines 22–31) and creates a hash set from this array (lines 33–34). It then reads each word from the file and tests if the word is in the set (line 41). If so, the program increases the count by 1 (line 42).
+You may rewrite the program to use a LinkedHashSet, TreeSet, ArrayList, or LinkedList to store the keywords. However, using a HashSet is the most efficient for this program.
 */
 
 import java.util.*;
@@ -39,6 +52,9 @@ public class CountKeywords {
 		} else {
 			System.out.println("File " + filename + " does not exist");
 		}
+
+		// Make the input error go away
+        input.close();
 	}
 	
 	public static int countKeywords(File file) throws Exception {
