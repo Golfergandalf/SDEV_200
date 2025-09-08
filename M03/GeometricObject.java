@@ -11,16 +11,16 @@ Override the equals method in the Object class. Two Circle objects are equal if 
 Draw the UML diagram that involves Circle, GeometricObject, and Comparable.
 */
 
-public FILL_CODE_OR_CLICK_ANSWER class GeometricObject {
+public abstract class GeometricObject {
 	private String color = "white";
 	private boolean filled;
 	private java.util.Date dateCreated;
 	
+    // Constructors
 	/** Construct a default geometric object */
 	protected GeometricObject() {
 		dateCreated = new java.util.Date();
 	}
-	
 	/** Construct a geometric object with color and filled value */
 	protected GeometricObject (String color, boolean filled) {
 		dateCreated = new java.util.Date();
@@ -28,22 +28,21 @@ public FILL_CODE_OR_CLICK_ANSWER class GeometricObject {
 		this.filled = filled;
 	}
 	
+    // Color
 	/** Return color */
 	public String getColor() {
 		return color;
 	}
-	
 	/** Set a new color */
 	public void setColor (String color) {
 		this.color = color;
 	}
 	
-	/** Return filled. Since filled is boolean,
-	 * the get method is named isFilled */
+    // Filled
+	/** Return filled. Since filled is boolean, the get method is named isFilled */
 	public boolean isFilled() {
 		return filled;
 	}
-	
 	/** Set a new filled */
 	public void setFilled (boolean filled) {
 		this.filled = filled;
@@ -60,8 +59,8 @@ public FILL_CODE_OR_CLICK_ANSWER class GeometricObject {
 	}
 	
 	/** Abstract method getArea */
-	public FILL_CODE_OR_CLICK_ANSWER double getArea();
+	public abstract double getArea();
 
 	/** Abstract method getPerimeter */
-	public FILL_CODE_OR_CLICK_ANSWER double getPerimeter();
+	public abstract double getPerimeter();
 }
