@@ -6,15 +6,21 @@ File:   Faculty.java
 */
 
 public class Faculty extends Employee {
+
+    // Variables
+    @SuppressWarnings("unused") // hide compile warnings
     private String officeHours;
+    @SuppressWarnings("unused") // hide compile warnings
     private String rank;
 
+    // Constructor
     public Faculty(String name, String address, String phone, String email, String office, double salary, MyDate dateHired, String officeHours, String rank) {
         super(name, address, phone, email, office, salary, dateHired);
         this.officeHours = officeHours;
         this.rank = rank;
     }
 
+    // Override
     @Override
     public String toString() {
         return "Faculty: " + getName();

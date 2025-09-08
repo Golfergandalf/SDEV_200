@@ -19,6 +19,9 @@ public class M02_Assignment_3 {
         } catch (NumberFormatException ex) {
             System.out.println("Not a binary number");
         }
+
+        // Make the input error go away
+        input.close();
     }
 
     // Method to convert binary string to decimal

@@ -6,11 +6,17 @@ File:   Person.java
 */
 
 public class Person {
+
+    // Variables
     private String name;
+    @SuppressWarnings("unused") // hide compile warnings
     private String address;
+    @SuppressWarnings("unused") // hide compile warnings
     private String phone;
+    @SuppressWarnings("unused") // hide compile warnings
     private String email;
 
+    // Constructor
     public Person(String name, String address, String phone, String email) {
         this.name = name;
         this.address = address;
@@ -18,10 +24,12 @@ public class Person {
         this.email = email;
     }
 
+    // Get Method
     public String getName() {
         return name;
     }
 
+    // Override
     @Override
     public String toString() {
         return "Person: " + name;
