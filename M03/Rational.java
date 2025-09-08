@@ -94,7 +94,7 @@ public class Rational extends Number implements Comparable<Rational> {
 		return new Rational(n, d);
 	}
 	
-    
+
     // Overrides
 	@Override // Override toString()
 	public String toString() {
@@ -104,30 +104,27 @@ public class Rational extends Number implements Comparable<Rational> {
 			return numerator + "/" + denominator;
 		}
 	}
-	
 	@Override // Override the equals method in the Object class
 	public boolean equals (Object other) {
 		if (other instanceof Rational) {
             Rational o = (Rational) other;
             return numerator.equals(o.getNumerator()) && denominator.equals(o.getDenominator());
+        } else {
+            return false;
         }
 	}
-	
 	@Override // Implement the abstract intValue method in Number
 	public int intValue() {
 		return (int)doubleValue();
 	}
-	
 	@Override // Implement the abstract floatValue method in Number
 	public float floatValue() {
 		return (float)doubleValue();
 	}
-	
 	@Override // Implement the doubleValue method in Number
 	public double doubleValue() {
-		return numerator * 1.0 / denominator;
+		return numerator.doubleValue() / denominator.doubleValue();
 	}
-	
 	@Override // Implement the abstract longValue method in Number
 	public long longValue() {
 		return (long)doubleValue();
