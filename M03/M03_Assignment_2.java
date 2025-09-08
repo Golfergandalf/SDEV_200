@@ -6,7 +6,7 @@ File:   M03_Assignment_2.java
 */
 
 public class M03_Assignment_2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // !
     }
 }

@@ -6,7 +6,7 @@ File:   M02_Assignment_2.java
 */
 
 public class M02_Assignment_2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Person person = new Person("Homer", "742 Evergreen Terrace", "555-1234", "homer@example.com");
         Student student = new Student("Marge", "123 Fake St", "555-5678", "marge@example.com", Student.SOPHOMORE);
         Employee employee = new Employee("Bart", "116 Cherry St", "555-9012", "bart@example.com", "Room 101", 50000, new MyDate());

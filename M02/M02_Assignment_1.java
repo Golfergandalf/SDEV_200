@@ -6,7 +6,7 @@ File:   M02_Assignment_1.java
 */
 
 public class M02_Assignment_1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         // Variables
         // Current date
