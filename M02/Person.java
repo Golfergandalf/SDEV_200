@@ -9,11 +9,8 @@ public class Person {
 
     // Variables
     private String name;
-    @SuppressWarnings("unused") // hide compile warnings
     private String address;
-    @SuppressWarnings("unused") // hide compile warnings
     private String phone;
-    @SuppressWarnings("unused") // hide compile warnings
     private String email;
 
     // Constructor
@@ -24,9 +21,18 @@ public class Person {
         this.email = email;
     }
 
-    // Get Method
+    // Getter Methods
     public String getName() {
         return name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public String getPhone() {
+        return phone;
+    }
+    public String getEmail() {
+        return email;
     }
 
     // Override

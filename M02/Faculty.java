@@ -4,13 +4,12 @@ Class:  SDEV 200
 Date:   9/3/25
 File:   Faculty.java
 */
+//@SuppressWarnings("unused") // hide compile warnings
 
 public class Faculty extends Employee {
 
     // Variables
-    @SuppressWarnings("unused") // hide compile warnings
     private String officeHours;
-    @SuppressWarnings("unused") // hide compile warnings
     private String rank;
 
     // Constructor
@@ -18,6 +17,14 @@ public class Faculty extends Employee {
         super(name, address, phone, email, office, salary, dateHired);
         this.officeHours = officeHours;
         this.rank = rank;
+    }
+
+    // Getter Methods
+    public String getOfficeHours() {
+        return officeHours;
+    }
+    public String getRank() {
+        return rank;
     }
 
     // Override

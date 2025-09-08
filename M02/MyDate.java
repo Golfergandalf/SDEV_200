@@ -34,7 +34,7 @@ class MyDate {
         this.day = day;
     }
 
-    // Getters
+    // Getter Methods
     public int getYear() {
         return year;
     }
