@@ -12,10 +12,13 @@ Draw the UML diagram that involves Circle, GeometricObject, and Comparable.
 */
 
 public abstract class GeometricObject {
+
+	// Variables
 	private String color = "white";
 	private boolean filled;
 	private java.util.Date dateCreated;
 	
+
     // Constructors
 	/** Construct a default geometric object */
 	protected GeometricObject() {
@@ -28,6 +31,7 @@ public abstract class GeometricObject {
 		this.filled = filled;
 	}
 	
+
     // Color
 	/** Return color */
 	public String getColor() {
@@ -38,6 +42,7 @@ public abstract class GeometricObject {
 		this.color = color;
 	}
 	
+
     // Filled
 	/** Return filled. Since filled is boolean, the get method is named isFilled */
 	public boolean isFilled() {
@@ -48,16 +53,21 @@ public abstract class GeometricObject {
 		this.filled = filled;
 	}
 	
+
+	// Date Created
 	/** Get dateCreated */
 	public java.util.Date getDateCreated() {
 		return dateCreated;
 	}
 	
+	// Overrides
 	@Override
 	public String toString() {
 		return "created on " + dateCreated + "\ncolor: " + color + " and filled: " + filled;
 	}
 	
+
+	// Calculations
 	/** Abstract method getArea */
 	public abstract double getArea();
 
