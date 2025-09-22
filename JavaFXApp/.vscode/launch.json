@@ -13,7 +13,7 @@
       "name": "Launch Main",
       "request": "launch",
       "mainClass": "Main",
-      "vmArgs": "--module-path \"C:/Users/gabby/Desktop/!College_Classes/Super_Senior_Year/2025_Semester1_Fall-Ivy/Sdev_200/SDEV_200/javafx-sdk-25/lib\" --add-modules javafx.controls,javafx.fxml"
+      "vmArgs": "--module-path \"C:/Users/gabby/Desktop/javafx-sdk-25/lib\" --add-modules javafx.controls,javafx.fxml"
     }
   ]
 }

@@ -1,3 +1,10 @@
+/* In-Class Activity: Sep 22, 2025
+Name:   Gabby Willard
+Class:  SDEV 200
+Date:   9/22/25
+File:   Main.java
+*/
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
