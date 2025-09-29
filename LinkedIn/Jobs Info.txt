@@ -1,0 +1,183 @@
+React Developer
+Resource Informatics Group, Inc
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4306761116&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Key Skills:
+• Proficiency in React.js, JavaScript, HTML, CSS
+• Experience with state management (Redux or similar)
+• Knowledge of REST APIs / GraphQL integration
+• Familiarity with responsive design & cross-browser compatibility
+• Strong debugging & problem-solving skills
+
+Jr. Java Developer
+Lensa
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4306082910&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Basic Qualifications:
+• 2-4 years of Java Development experience.
+• Able to achieve MBI Public Trust clearance.
+• Java IDE (Eclipse or JBoss), Maven, Junit / Mockito, JavaScript / React / JQuery, HTML/ XM, Spring Boot, Spring MVC, Restful Services, Oracle or Mongo experience.
+• Must have experience in Agile.
+• Must have experience with software design patterns.
+• Must have strong analytical skills & be detail-oriented.
+Preferred Qualifications:
+• Responsive Web Design frameworks (HTML5, Bootstrap, Foundation)
+• Microservices
+• RedHat OpenShift
+• Cloud implementation
+• MongoDB
+• Current MBI Clearance
+
+Junior Web Developer
+Ledgent Technology
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4304708144&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Require Qualifications & Skills:
+• Proficiency in digital advertising technologies
+• Strong PHP coding skills with OOP principles
+• Proficiency in HTML, CSS, JavaScript, and TypeScript
+• WordPress Framework expertise
+• MySQL (8) database management skills
+• Experience with Ubuntu (24.04)/Nginx server administration
+• Knowledge of caching systems (Redis, Memcached)
+• RESTful and GraphQL API development experience
+• UI/UX design principles knowledge
+• Analytics platforms proficiency
+• A/B testing and CRO understanding
+Preferred Qualifications & Skills:
+• Experience in broadcast media, television, radio, or digital publishing environments.
+• Spanish-speaking
+• Website security expertise
+• Social media marketing pixels implementation experience
+• Cloud hosting services experience
+• Experience working on news websites
+• Proven track record of mobile-friendly development
+• Experience in broadcast media, television, radio, or digital publishing environments.
+• Familiarity with analytics, audience measurement, and first-party data platforms.
+• Knowledge of server-side rendering (Next.js, Nuxt.js) and microservices architecture.
+
+Fronted Developer
+Berkley Hunt
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4301759537&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Requirements:
+• 5+ years of full-stack product engineering experience, with strong emphasis on frontend craft.
+• Deep expertise in React, NextJS, TypeScript, and related tooling (Tanstack, modern state management, etc.).
+• Experience with data visualization libraries such as D3.js or Recharts.
+• Strong backend capabilities: API design, database optimization, distributed systems fundamentals.
+• Exceptional attention to detail and a strong sense of product design.
+• Proactive, ownership-driven mindset and the ability to thrive in fast-moving environments.
+Nice To Have:
+• Early-stage startup experience: building products from 0 → 1 in high-growth environments.
+• Experience building developer tools (analytics platforms, monitoring tools, observability products, SDKs).
+• Familiarity with AI engineering concepts (prompt engineering, RAG, LLM observability, agent orchestration, evals).
+• Strong background in design systems or UI component libraries.
+
+Junior Java Developer
+IntePros Federal
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4302990913&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Required Experience:
+• Experience with Azure Services including Azure Batch, Key Vault, and Application Insights
+• Experience with DevOps tools such as Git, Azure DevOps, Bamboo, and GitHub Actions
+• Experience with Java Web Services/Spring Boot/Java EE
+• Experience with Web Development/UI Frameworks/ HTML/JavaScript/Gradl
+• Experience with Struts and Restful services
+• Experience with UNIX/LINUX/PowerShell bash or shell scripting
+• Experience in Agile development methodology and Kanban or Lean practices
+• Familiarity with Selenium Framework for automated tests
+• Ability to work well and collaborate within a team environment
+
+Fronted Developer - Remote
+Magik
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4308001952&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Required Skills & Experience:
+• 3+ years of front-end development experience, with an eye for design and detail
+• Strong proficiency in HTML5, CSS3, and JavaScript
+• Experience with version control (Git)
+• Familiarity with A/B testing tools, methodologies, and conversion optimization best practices
+• Knowledge of web performance optimization techniques and mobile-first responsive design
+• Experience embedding and optimizing video for the web
+• Hands-on experience with analytics/tracking integrations (Google Analytics, Facebook Pixel, etc.)
+• Ability to work independently, meet tight deadlines, and quickly pivot as needed
+Preferred:
+• Understanding of direct-response marketing principles
+• Experience with modern frameworks (React or Vue)
+• Familiarity with landing page design best practices
+
+Junior Java Developer & Backend Java Developer (L2S, H4 EAD, EAD GC, GC and US Citizens)
+Precision Technologies
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4306623258&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+What We're Looking For:
+• Minimum 3+ years of hands-on experience in Java application development, with strong skills in Core Java, Spring Framework, and Spring Boot.
+• Experience in developing backend services and RESTful APIs for enterprise applications.
+• Working knowledge of Spring MVC, Spring Data JPA, Hibernate, and exposure to Microservices architecture.
+• Good understanding of SQL and relational databases such as Oracle, MySQL, or PostgreSQL, including writing queries, joins, and stored procedures.
+• Exposure to front-end integration with JavaScript, HTML5, CSS3, and familiarity with Angular or React is a plus.
+• Basic understanding of cloud platforms (AWS, Azure, or GCP) and experience deploying Java applications or using services like EC2, S3, or Azure App Services.
+• Familiarity with version control tools like Git, and exposure to CI/CD pipelines using Jenkins, GitHub Actions, or Azure DevOps.
+• Solid foundation in OOP principles, design patterns, and coding best practices for maintainable software development.
+• Hands-on experience with unit testing frameworks like JUnit or Mockito, and exposure to integration testing practices.
+• Knowledge of exception handling, logging frameworks (Log4j/SLF4J), and basics of Spring Security for secure applications.
+• Exposure to containerization with Docker; knowledge of Kubernetes/orchestration tools is a plus.
+• Experience working in Agile/Scrum teams, participating in sprint planning, daily stand-ups, code reviews, and retrospectives.
+• Strong problem-solving and debugging skills, with the ability to collaborate effectively with senior developers, QA, DevOps, and product teams.
+
+Back End Developer
+Valzo Soft Solutions
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4308007464&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Required Skills & Qualifications:
+• Bachelor’s degree in Computer Science, Engineering, or related field.
+• 5–7 years of proven experience as a Back-End Developer.
+• Strong proficiency in back-end languages such as Java, Python, Node.js, or C#.
+• Hands-on experience with relational and NoSQL databases (MySQL, PostgreSQL, MongoDB, etc.).
+• Solid understanding of REST APIs, Graph QL, and microservices architecture.
+• Experience with version control (Git), CI/CD pipelines, and containerization (Docker, Kubernetes).
+• Strong knowledge of system design, scalability, and performance optimization.
+• Excellent problem-solving skills and attention to detail.
+Preferred Qualifications:
+• Experience with cloud platforms such as AWS, Azure, or GCP.
+• Familiarity with messaging queues like Kafka or RabbitMQ.
+• Knowledge of DevOps practices, monitoring, and automation tools.
+• Industry certifications in cloud, database, or back-end development.
+• Strong communication and collaboration skills in remote environments.
+
+Frontend Developer
+ARK Solutions, Inc.
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4306807050&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Required Qualifications:
+• Bachelor’s degree in Computer Science, Engineering, or a related field.
+• 5+ years of professional experience in front-end development.
+• Strong proficiency in JavaScript, HTML5, and CSS3.
+• Hands-on experience with one or more modern frameworks: React.js, Angular, or Vue.js.
+• Experience with RESTful APIs and asynchronous request handling (e.g., Axios, Fetch).
+• Familiarity with version control tools like Git.
+• Understanding of responsive design, cross-browser compatibility, and accessibility standards (WCAG).
+• Strong attention to detail and UI/UX sensibilities.
+Preferred Qualifications:
+• Experience with TypeScript and component libraries (e.g., Material UI, Ant Design).
+• Familiarity with front-end testing tools (Jest, Cypress, etc.).
+• Experience with state management (Redux, MobX, Pinia, or Context API).
+• Knowledge of performance optimization techniques (lazy loading, code splitting).
+• Exposure to CI/CD pipelines and modern build tools (Webpack, Vite, etc.).
+• Understanding of SEO principles for SPA applications.
+• Experience with Figma, Zeplin, or similar design tools.
+
+Jr. Full Stack/Back End Developer
+Bidsquare
+United States (Remote)
+https://www.linkedin.com/jobs/search/?currentJobId=4305579668&geoId=106598045&keywords=software%20developer&origin=JOB_SEARCH_PAGE_LOCATION_AUTOCOMPLETE&refresh=true
+Skills & Qualifications:
+• Strong proficiency in PHP and experience with PHP MVC frameworks (Phalcon experience is a plus).
+• Experience using Laravel in last two years (this is a requirement)
+• Extensive experience with relational databases, particularly MySQL/MariaDB
+• Proficiency in creating and integrating REST APIs.
+• Familiarity with Node.js is a plus.
+• Experience with unit and integration testing methodologies.
+• Understanding and experience with CI/CD pipelines.
+• Strong ability to write clean, readable, and maintainable code.
+
