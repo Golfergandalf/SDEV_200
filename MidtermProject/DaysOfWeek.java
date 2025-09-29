@@ -6,6 +6,7 @@ File:   DaysOfWeek.java
 */
 
 package daysAndDates; // Added missing semicolon
+
 public class DaysOfWeek {
     public static String DayOfWeekStr(int NumberOfDay) {
         String dayStr = ""; // Added missing semicolon
