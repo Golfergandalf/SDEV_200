@@ -17,10 +17,11 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class M05_Assignment_1 {
+public class M05_Assignment_1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+
         // Create a GridPane
         GridPane gridPane = new GridPane();
         gridPane.setHgap(10); // Horizontal gap between columns
