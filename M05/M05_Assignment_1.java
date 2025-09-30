@@ -7,10 +7,7 @@ File:   M05_Assignment_1.java
 
 /* 14.1 (Display images)
 Write a program that displays four images in a grid pane, as shown in Figure 14.43a.
-Figure 14.43: 
-(a) Exercise 14.1 displays four images. 
-(b) Exercise 14.2 displays a tic-tac-toe board with images. 
-(c) Three cards are randomly selected.
+Figure 14.43 (a) Exercise 14.1 displays four images.
 */
 
 import javafx.application.Application;
@@ -21,7 +18,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class M05_Assignment_1 {
-    
+
     @Override
     public void start(Stage primaryStage) {
         // Create a GridPane
@@ -30,10 +27,10 @@ public class M05_Assignment_1 {
         gridPane.setVgap(10); // Vertical gap between rows
 
         // Load images (make sure the image files are in your project folder)
-        Image image1 = new Image("file:images/image1.png");
-        Image image2 = new Image("file:images/image2.png");
-        Image image3 = new Image("file:images/image3.png");
-        Image image4 = new Image("file:images/image4.png");
+        Image image1 = new Image("file:Images/flag1.gif");
+        Image image2 = new Image("file:Images/flag2.gif");
+        Image image3 = new Image("file:Images/flag6.gif");
+        Image image4 = new Image("file:Images/flag7.gif");
 
         // Create ImageViews
         ImageView imageView1 = new ImageView(image1);
