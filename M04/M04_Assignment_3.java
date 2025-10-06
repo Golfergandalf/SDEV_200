@@ -20,10 +20,10 @@ Test your new class using this code from https://liveexample.pearsoncmg.com/test
 public class M04_Assignment_3 {
     public static void main(String[] args) {
         TwoWayLinkedList<String> list = new TwoWayLinkedList<>();
-        list.add("Tom");
-        list.add("Susan");
-        list.add("Kim");
-        list.add("Michael");
+        list.add("Homer");
+        list.add("Marge");
+        list.add("Bart");
+        list.add("Lisa");
 
         System.out.println("Forward traversal:");
         java.util.ListIterator<String> it = list.listIterator();
