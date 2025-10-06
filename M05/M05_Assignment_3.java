@@ -12,6 +12,7 @@ No light is on when the program starts.
 Figure 16.37 (a) The radio buttons are grouped to let you turn only one light on at a time. 
 */
 
+// Imports
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;

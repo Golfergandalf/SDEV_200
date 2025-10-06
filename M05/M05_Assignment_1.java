@@ -10,6 +10,7 @@ Write a program that displays four images in a grid pane, as shown in Figure 14.
 Figure 14.43 (a) Exercise 14.1 displays four images.
 */
 
+// Imports
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
