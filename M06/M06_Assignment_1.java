@@ -41,7 +41,7 @@ public class M06_Assignment_1 extends Application {
 
     // Database connection info
     private static final String DB_URL = "jdbc:mysql://localhost:3306/Staff";
-    private static final String USERNAME = "root";
+    private static final String USERNAME = "username";
     private static final String PASSWORD = "password";
 
     // Text fields for staff information
