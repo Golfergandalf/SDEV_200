@@ -6,7 +6,10 @@ File:   M06_Assignment_1.java
 */
 
 /* 34.1 (Access and update a Staff table)
-Write a program that views, inserts, and updates staff information stored in a database, as shown in Figure 34.27a. The View button displays a record with a specified ID. The Insert button inserts a new record. The Update button updates the record for the specified ID. The Staff table is created as follows:
+Write a program that views, inserts, and updates staff information stored in a database, as shown in Figure 34.27a. 
+The View button displays a record with a specified ID. The Insert button inserts a new record. 
+The Update button updates the record for the specified ID. The Staff table is created as follows:
+
 create table Staff (
     id char(9) not null,
     lastName varchar(15),
