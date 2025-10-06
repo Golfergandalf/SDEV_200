@@ -16,8 +16,19 @@ The former sets the cursor to the head of the list and the latter to the element
 Test your new class using this code from https://liveexample.pearsoncmg.com/test/Exercise24_03_13e.txt.
 */
 
+
 public class M04_Assignment_3 {
     public static void main(String[] args) {
-        // Assignment 3
+        TwoWayLinkedList<String> list = new TwoWayLinkedList<>();
+        list.add("Tom");
+        list.add("Susan");
+        list.add("Kim");
+        list.add("Michael");
+
+        System.out.println("Forward traversal:");
+        java.util.ListIterator<String> it = list.listIterator();
+        while (it.hasNext()) System.out.print(it.next() + " ");
+        System.out.println("\nBackward traversal:");
+        while (it.hasPrevious()) System.out.print(it.previous() + " ");
     }
 }
