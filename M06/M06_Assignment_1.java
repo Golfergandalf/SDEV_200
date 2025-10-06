@@ -22,6 +22,8 @@ create table Staff (
     email varchar(40),
     primary key (id)
 );
+
+Figure 34.27 (a) The program lets you view, insert, and update staff information.
 */
 
 // Imports
