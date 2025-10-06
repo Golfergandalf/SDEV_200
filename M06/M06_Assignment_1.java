@@ -122,7 +122,7 @@ public class M06_Assignment_1 extends Application {
     private void connectToDB() {
         try {
             connection = DriverManager.getConnection(DB_URL, USERNAME, PASSWORD);
-            System.out.println("✅ Connected to database successfully.");
+            System.out.println("Connected to database successfully.");
         } catch (SQLException ex) {
             showAlert("Database Connection Error", ex.getMessage());
         }
