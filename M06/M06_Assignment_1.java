@@ -34,7 +34,7 @@ import java.sql.*;
 
 public class M06_Assignment_1 extends Application {
 
-    // Database connection info (adjust for your setup)
+    // Database connection info
     private static final String DB_URL = "jdbc:mysql://localhost:3306/Staff";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "password";
