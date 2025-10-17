@@ -1,0 +1,2 @@
+I have not been able to get Java FX to work on my computer at all but I did use my knowledge from class and the textbook to be able to code Java FX things.
+Please keep this in mind when grading.
